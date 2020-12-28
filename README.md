@@ -1,9 +1,13 @@
 # deploy-sample
-spring boot 배포/종료 기본 샘플
+spring boot war 배포&종료 샘플
 
 
-### start.sh(war 배포 스크립트) 작성
- - nohup java -jar deploy-sample.war &
+### start.sh(war 배포 스크립트)
+```sh
+nohup java -jar deploy-sample.war &
+```
 
-### shutdown.sh(프로세스 종료 스크립트) 작성
- - kill -15 `cat deploy-sample.pid`
+### shutdown.sh(프로세스 종료 스크립트)
+ ```sh
+ kill -15 `cat deploy-sample.pid`
+ ```
